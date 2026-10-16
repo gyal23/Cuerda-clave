@@ -15,14 +15,12 @@ button{font:inherit;cursor:pointer;border:0}
 .sw{position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:50;display:flex;gap:4px;background:var(--ebony);padding:5px;border-radius:999px;box-shadow:0 8px 24px #0006}
 .sw button{background:none;color:var(--cream);padding:9px 14px;border-radius:999px;font-size:.8rem;font-weight:700;white-space:nowrap}
 .sw button.on{background:var(--terra)}
-/* eq */
 .eq{display:flex;align-items:flex-end;gap:3px;height:56px}
 .eq i{flex:1;max-width:9px;background:var(--mus);border-radius:3px;height:12%;transition:height .2s}
 .eq i:nth-child(6n+1),.eq i:nth-child(6n+2),.eq i:nth-child(6n+3){background:var(--terra)}
 .eq i:nth-child(6n){margin-right:10px}
 .playing .eq i{animation:b .5s ease-in-out infinite alternate;animation-delay:calc(var(--d)*60ms)}
 @keyframes b{from{height:12%}to{height:100%}}
-/* V1 */
 #v1{background:var(--cream);color:var(--ebony)}
 #v1 .nav{position:relative;z-index:5}
 .hero1{margin:0 4vw;min-height:78vh;display:flex;flex-direction:column;justify-content:flex-end;gap:18px;padding:36px 5vw 28px;border-radius:32px;border:3px solid var(--ebony);color:var(--cream);box-shadow:6px 6px 0 var(--terra);background:linear-gradient(180deg,#b51a1a26 0%,#b51a1aa6 55%,#B51A1Af2 100%),url("tarima-azul.jpg") center/cover}
@@ -40,11 +38,10 @@ button{font:inherit;cursor:pointer;border:0}
 .clip:nth-child(4n+1){background:linear-gradient(160deg,var(--red),#3a0d0d)}.clip:nth-child(4n+2){background:linear-gradient(160deg,var(--terra),#5a1f0a)}.clip:nth-child(4n+3){background:linear-gradient(160deg,var(--mus),#6b3f05)}.clip:nth-child(4n){background:linear-gradient(160deg,var(--red),var(--terra))}
 .clip:hover{transform:scale(1.03)}.clip{transition:.2s}
 .clip b{font-size:1.1rem}.clip small{opacity:.85}
-.clip::before{content:"â–¶";position:absolute;top:12px;right:14px;background:#0005;border-radius:50%;width:34px;height:34px;display:grid;place-items:center;font-size:.8rem}
+.clip::before{content:"▶";position:absolute;top:12px;right:14px;background:#0005;border-radius:50%;width:34px;height:34px;display:grid;place-items:center;font-size:.8rem}
 .fest{background:linear-gradient(120deg,var(--red),var(--terra));border-radius:24px;padding:24px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
 .fest h3{font-family:var(--h);font-size:1.5rem}
 .fest .cd{font-weight:800;color:var(--mus);font-size:1.1rem}
-/* V2 */
 .nav2{background:var(--cream);border-bottom:3px solid var(--ebony);position:sticky;top:0;z-index:20}
 .nav2 .menu{background:none;font-weight:800;padding:8px 14px;border:2px solid var(--ebony);border-radius:8px}
 .drop{display:none;background:var(--ebony);padding:14px 5vw;gap:18px;flex-wrap:wrap;color:var(--cream);font-weight:700}.drop.open{display:flex}
@@ -66,7 +63,6 @@ button{font:inherit;cursor:pointer;border:0}
 .card h3{font-family:var(--h);font-size:1.4rem;text-transform:uppercase}
 .c1{background:var(--terra);color:#fff}.c2{background:var(--mus)}.c3{background:var(--ebony);color:var(--cream)}
 .strings{height:14px;background:repeating-linear-gradient(var(--ebony) 0 2px,transparent 2px 5px);margin:0 5vw;opacity:.8}
-/* V3 */
 #v3{background:var(--cream);position:relative;overflow:hidden}
 .nav3{position:sticky;top:10px;margin:10px 4vw 0;z-index:20;background:#FBF7EEb3;backdrop-filter:blur(12px);border-radius:999px;box-shadow:0 4px 20px #1a100c22}
 .nav3 .pa{background:var(--terra);color:#fff;padding:8px 20px}
@@ -110,7 +106,7 @@ footer{padding:28px 5vw;text-align:center;font-size:.85rem;opacity:.7}
 .ph figure:nth-child(4){margin-top:28px}
 @media(max-width:860px){.b-red .tx{max-width:100%}.cut{position:relative!important;right:auto;bottom:auto;width:100%;aspect-ratio:16/9;transform:none}}
 
-/* ===== v3: tono, menÃº, descarga, galerÃ­a, diÃ¡logos, pasaporte ===== */
+/* ===== v3: tono, menú, descarga, galería, diálogos, pasaporte ===== */
 .tone{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:.72rem;letter-spacing:.06em;margin-top:10px}
 .tone button{width:28px;height:28px;border-radius:50%;border:2px solid currentColor;background:none;color:inherit;font-weight:800;line-height:1}
 .tone .tv{min-width:2.2ch;text-align:center;font-size:.9rem}
@@ -131,12 +127,12 @@ dialog{border:3px solid var(--ebony);border-radius:20px;padding:22px;max-width:m
 dialog::backdrop{background:#1a100cbf}#lb{padding:0;max-width:92vw;background:none;border:0}#lb img{max-width:92vw;max-height:88vh;border-radius:16px;display:block}
 dialog .x{position:absolute;top:8px;right:10px;font-size:1.6rem;background:var(--cream);border-radius:50%;width:38px;height:38px}#tyc .x{position:static;width:auto;height:auto;font-size:1rem;margin-top:14px}
 footer a{text-decoration:underline}
-/* PÃ³ster imprimible */
+
 #pp{display:none}
 @media print{@page{size:A4;margin:0}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}body.pp>*:not(#pp){display:none!important}body.pp #pp{display:block}body.pp{background:#fff}#pp img{display:block;width:100%;height:auto}}
 .b-red .big{font-size:clamp(1.8rem,3.6vw,3rem)}
 
-/* ===== v4: videos, crew, dato curioso, pistas ===== */
+
 .v{padding-bottom:0}
 .vid{flex:0 0 min(64vw,250px);margin:0;border:3px solid var(--ebony);border-radius:20px;overflow:hidden;box-shadow:4px 4px 0 var(--ebony);background:#000;scroll-snap-align:start}
 .vid video{display:block;width:100%;aspect-ratio:576/816;object-fit:cover;background:#000}
@@ -150,7 +146,7 @@ footer a{text-decoration:underline}
 .fld{margin-top:12px;display:grid;gap:4px;font-weight:700}.fld input{padding:12px 16px;border-radius:999px;border:2px solid var(--terra);font:inherit;background:#fff}
 #cm{margin-top:12px;font-weight:800;color:var(--red)}#crew{width:min(92vw,460px)}
 
-/* ===== v5: pistas por secciÃ³n, notas, parque, ondas, privacidad ===== */
+
 .trsel{max-width:190px;font:inherit;font-size:.72rem;font-weight:700;padding:5px 10px;border-radius:999px;border:2px solid currentColor;background:transparent;color:inherit}.trsel option{color:var(--ebony);background:#fff}
 .tone .sp{flex-basis:100%;height:0}.live .tone .sp{display:none}
 .hero3 .eq{justify-content:center}.eq i:last-child{margin-right:0}
