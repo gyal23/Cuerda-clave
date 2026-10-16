@@ -12,7 +12,7 @@ const showV=v=>{if(!au.paused&&own!==v)au.pause();$('.sw button').forEach(b=>b.c
 const go=k=>{const[v,id]=k.split('#');showV(v);setTimeout(()=>{const t=id&&document.getElementById(id);t?t.scrollIntoView({behavior:'smooth'}):scrollTo({top:0,behavior:'smooth'})},40)};
 
 // ---------- Audio: cada sección arranca con una canción distinta (editable en TRACKS) ----------
-const TRACKS=[{src:'assets/audio/claro-que-te-amo.mp3',name:'Claro que te amo (cover de guitarra)'},{src:'assets/audio/agustin-codazzi-cesar.mp3',name:'Agustín Codazzi – Cesar'},{src:'assets/audio/pista-3.mp3',name:'Pista 3'},{src:'assets/audio/pista-4.mp3',name:'Pista 4'},{src:'assets/audio/pista-5.mp3',name:'Pista 5'},{src:'assets/audio/pista-6.mp3',name:'Pista 6'},{src:'assets/audio/pista-7.mp3',name:'Pista 7'},{src:'assets/audio/pista-8.mp3',name:'Pista 8'},{src:'assets/audio/pista-9.mp3',name:'Pista 9'}];
+const TRACKS=[{src:'claro-que-te-amo.mp3',name:'Claro que te amo (cover de guitarra)'},{src:'agustin-codazzi-cesar.mp3',name:'Agustín Codazzi – Cesar'},{src:'pista-3.mp3',name:'Pista 3'},{src:'pista-4.mp3',name:'Pista 4'},{src:'pista-5.mp3',name:'Pista 5'},{src:'pista-6.mp3',name:'Pista 6'},{src:'pista-7.mp3',name:'Pista 7'},{src:'pista-8.mp3',name:'Pista 8'},{src:'pista-9.mp3',name:'Pista 9'}];
 const ts={v1:0,v2:1,v3:2};let own='v1',cur=-1,tn=0;const au=new Audio();au.preload='none';
 const sec=el=>el.closest('.v').id;
 const setP=()=>{const on=!au.paused;$('.v').forEach(v=>v.classList.toggle('playing',on&&v.id===own));$('.play').forEach(b=>{b.dataset.o=b.dataset.o||b.textContent;b.textContent=on&&sec(b)===own?'❚❚ PAUSAR':b.dataset.o})};

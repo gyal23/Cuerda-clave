@@ -25,7 +25,7 @@ button{font:inherit;cursor:pointer;border:0}
 /* V1 */
 #v1{background:var(--cream);color:var(--ebony)}
 #v1 .nav{position:relative;z-index:5}
-.hero1{margin:0 4vw;min-height:78vh;display:flex;flex-direction:column;justify-content:flex-end;gap:18px;padding:36px 5vw 28px;border-radius:32px;border:3px solid var(--ebony);color:var(--cream);box-shadow:6px 6px 0 var(--terra);background:linear-gradient(180deg,#b51a1a26 0%,#b51a1aa6 55%,#B51A1Af2 100%),url("../assets/img/tarima-azul.jpg") center/cover}
+.hero1{margin:0 4vw;min-height:78vh;display:flex;flex-direction:column;justify-content:flex-end;gap:18px;padding:36px 5vw 28px;border-radius:32px;border:3px solid var(--ebony);color:var(--cream);box-shadow:6px 6px 0 var(--terra);background:linear-gradient(180deg,#b51a1a26 0%,#b51a1aa6 55%,#B51A1Af2 100%),url("tarima-azul.jpg") center/cover}
 .hero1 h1,.big{font-family:var(--h);font-size:clamp(2.4rem,8vw,5.5rem);line-height:1;font-weight:700;text-shadow:0 3px 18px #0008}
 .hero1 p{font-size:1.2rem;opacity:.85}
 .row{display:flex;gap:12px;flex-wrap:wrap}
@@ -99,14 +99,14 @@ footer{padding:28px 5vw;text-align:center;font-size:.85rem;opacity:.7}
 .ph .im{aspect-ratio:3/4;border-radius:999px 999px 24px 24px;border:3px solid var(--ebony);background-size:cover;background-position:center;box-shadow:5px 5px 0 var(--terra)}
 .ph figure:nth-child(2){margin-top:28px}
 .nav{padding:8px 5vw}
-.wm{display:block;width:112px;height:58px;background:url("../assets/img/logo-rojo.png") left center/contain no-repeat}
-.clip.g::after{content:"";position:absolute;inset:16% 14% auto;height:40%;background:url("../assets/img/isotipo-crema.png") center/contain no-repeat;opacity:.3}
-.b-red::before{content:"";position:absolute;left:-30px;bottom:-30px;width:260px;height:200px;background:url("../assets/img/isotipo-crema.png") center/contain no-repeat;opacity:.12}
+.wm{display:block;width:112px;height:58px;background:url("logo-rojo.png") left center/contain no-repeat}
+.clip.g::after{content:"";position:absolute;inset:16% 14% auto;height:40%;background:url("isotipo-crema.png") center/contain no-repeat;opacity:.3}
+.b-red::before{content:"";position:absolute;left:-30px;bottom:-30px;width:260px;height:200px;background:url("isotipo-crema.png") center/contain no-repeat;opacity:.12}
 .b-red>*{position:relative}
 .b-red .tx{max-width:58%}
 .cut{position:absolute!important;right:22px;bottom:22px;width:34%;aspect-ratio:4/5;border:4px solid var(--cream);border-radius:14px;background:center/cover;transform:rotate(3deg);box-shadow:6px 6px 0 var(--mus)}
 .pic{height:130px;border:3px solid var(--ebony);border-radius:12px;background:center/cover}
-.iso3{width:64px;height:48px;margin:0 auto 10px;background:url("../assets/img/isotipo-rojo.png") center/contain no-repeat}
+.iso3{width:64px;height:48px;margin:0 auto 10px;background:url("isotipo-rojo.png") center/contain no-repeat}
 .ph figure:nth-child(4){margin-top:28px}
 @media(max-width:860px){.b-red .tx{max-width:100%}.cut{position:relative!important;right:auto;bottom:auto;width:100%;aspect-ratio:16/9;transform:none}}
 
@@ -162,4 +162,4 @@ footer a{text-decoration:underline}
 .parque{flex-direction:row!important;gap:0!important;padding:0!important}.parque .pv{flex:0 0 40%;background:center 40%/cover;border-right:3px solid var(--ebony)}
 .parque .pt{padding:20px;display:flex;flex-direction:column;justify-content:space-between;gap:14px}.parque .lnk{align-self:flex-start;color:var(--cream)}
 #tyc{width:min(92vw,680px);max-height:86vh;overflow:auto}#tyc h4{margin:18px 0 4px;font-family:var(--h);color:var(--red)}#tyc p,#tyc li{font-size:.92rem;margin-bottom:6px}#tyc ul{padding-left:20px}#tyc .note{background:var(--mus);padding:10px 12px;border-radius:12px}
-.pp-prev{width:170px;aspect-ratio:210/297;border:3px solid var(--ebony);border-radius:10px;background:url("../assets/img/poster-edicion-especial.jpg") center/cover;transform:rotate(3deg);box-shadow:5px 5px 0 var(--ebony)}
+.pp-prev{width:170px;aspect-ratio:210/297;border:3px solid var(--ebony);border-radius:10px;background:url("poster-edicion-especial.jpg") center/cover;transform:rotate(3deg);box-shadow:5px 5px 0 var(--ebony)}
